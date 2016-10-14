@@ -624,9 +624,9 @@ pool data {
   </sect2>
 
   <sect2 xml:id="op.crush.addosd">
-   <title>Add/Move an OSD</title>
+   <title>Move an OSD</title>
    <para>
-    To add or move an OSD in the CRUSH map of a running cluster, execute the
+    To move an OSD in the CRUSH map of a running cluster, execute the
     following:
    </para>
 <screen>ceph osd crush set <replaceable>id_or_name</replaceable> <replaceable>weight</replaceable> root=<replaceable>pool-name</replaceable>
@@ -676,8 +676,7 @@ pool data {
     </varlistentry>
    </variablelist>
    <para>
-    The following example adds <literal>osd.0</literal> to the hierarchy, or
-    moves the OSD from a previous location.
+    The following example moves <literal>osd.0</literal> from a previous location.
    </para>
 <screen>ceph osd crush set osd.0 1.0 root=data datacenter=dc1 room=room1 \
 row=foo rack=bar host=foo-bar-1</screen>
