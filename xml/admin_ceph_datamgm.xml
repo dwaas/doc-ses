@@ -562,7 +562,7 @@ pool data {
    adding/moving/removing an OSD.
   </para>
 
-  <sect2>
+  <sect2 xml:id="Editing_Crushmap">
    <title>Editing a &crushmap;</title>
    <para>
     To edit an existing CRUSH map, do the following:
